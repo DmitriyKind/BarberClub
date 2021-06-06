@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barber Club</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="plagins/slick/slick.css">
+    <link rel="stylesheet" href="plagins/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+<div id="header" class="wow  animate__backInDown">
+    <div id="call">
+        <div id="call-content" class="wow animate__fadeInUp">
+            <div id="blade-2">
+                <img src="images/blade-2.png">
+            </div>
+            <div id="pop-ap-block">
+                <div id="call-content-close">
+                    <img id="call-close" src="images/close.png">
+                </div>
+                <div class="description-content-title">Заказать звонок</div>
+                <div id="call-content-text">Мы перезвоним вам в течении 5 минут.</div>
+                <form id="call-form" action="call-mail.php" method="post">
+                    <div class="call-input">
+                        <input class="form" type="text" name="client-name" id="client-name" placeholder="Александр"><br>
+                        <span id="for-client-name" class="error-text hide">Необходимо ввести имя!</span>
+                    </div>
+                    <div class="call-input">
+                        <input class="form" type="text" name="phone-number" id="phone-number"
+                               placeholder="+380 (__) ___ - __ - __"><br>
+                        <span id="for-phone-number" class="error-text hide">Необходимо ввести номер телефона!</span>
+                    </div>
+                </form>
+                <button id="call-btn" class="btn-red">Отправить заявку</button>
+            </div>
+            <div id="call-sent">
+                <div id="call-text">Спасибо, мы свяжемся с вами в ближайшее время!</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="logo">
+        <img src="images/scissors.png">
+        <div>Barber club</div>
+    </div>
+    <div id="header-menu">
+        <a href="#description" class="active"><span>О нас</span></a>
+        <a href="#tabs-container">Услуги</a>
+        <a href="#discount">Акции</a>
+        <a href="#slick-container">Наши мастера</a>
+        <a href="#contacts-content">Контакты</a>
+        <div id="close">
+            <img src="images/close.png">
+        </div>
+    </div>
+    <div id="number">
+        +380 (98) 816-93-96
+    </div>
+    <div id="burger-block">
+        <div id="burger">&#9776;</div>
+        <div id="action">
+            <button class="btn-border-red">
+                <img src="images/call.png">
+                <span>Заказать звонок</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="titles">
+    <h2 id="titles-title" class=" wow  animate__bounceInLeft">
+        <span> Barber Club</span> - место<br>
+        для настоящих мужчин
+    </h2>
+    <div id="titles-text" class="wow  animate__bounceInLeft">
+        Создайте деловой имидж, который достоин Вас!
+        Получите скидку <span>15%</span> на ваш первый визит
+    </div>
+    <div id="titles-button" class="wow  animate__bounceInLeft">
+        <button class="btn-red form-barber">Записаться</button>
+    </div>
+    <img id="titles-man" class="wow  animate__fadeInDown" src="images/man.png">
+
+</div>
+
+<img id="Barber" class="wow  animate__fadeIn" src="images/Barber.png">
+
+<img id="Club" class="wow  animate__fadeIn" src="images/Club.png">
+
+<div id="description">
+    <div id="description-image" class="wow  animate__slideInLeft">
+        <img id="image" src="images/kamile-leo.png">
+        <img id="blade" src="images/blade.png">
+    </div>
+    <div id="description-content" >
+        <div class="description-content-title wow  animate__fadeInRightBig">О нас</div>
+        <div class="description-content-text wow  animate__fadeInRight">
+            У нас есть всё, что требуется настоящему мужчине: атмосфера брутальности и
+            мужского духа, профессионализм барберов и сохранение европейских традиций барберинга, а также отличный кофе
+            и хорошая компания.
+        </div>
+        <div class="description-content-text wow  animate__fadeInRight">
+            Barber Club – это намного больше, чем просто мужская парикмахерская. Это место, где Вам помогут найти свой
+            собственный, неповторимый стиль. Стоит довериться мастерам Barber Club один раз, и, поверьте, новый образ не
+            оставит Вас равнодушным. Мужские стрижки и опасное бритье — это наш профиль, и мы уверены, что наши барберы
+            делают это лучше всех.
+        </div>
+    </div>
+</div>
+
+<div id="for-you" class="wow  animate__fadeInUp">
+    <div class="for-you-content">
+        <img src="images/cup-of-drink.png" class="for-you-content-image">
+        <div class="for-you-content-text">
+            Мы предложим вам<br>
+            чашечку кофе или чая
+        </div>
+    </div>
+    <div class="for-you-content">
+        <img src="images/grooming.png" class="for-you-content-image">
+        <div class="for-you-content-text">
+            Мы пострижем и побреем вас<br>
+            по всем европейским традициям
+        </div>
+    </div>
+    <div class="for-you-content">
+        <img src="images/hairstyle.png" class="for-you-content-image">
+        <div class="for-you-content-text">
+            И скоро вы снова захотите
+            вернуться в наш барбершоп
+        </div>
+    </div>
+</div>
+
+<div id="tabs-container">
+    <div class="description-content-title wow  animate__slideInLeft">Наши услуги</div>
+    <div id="tabs-content">
+        <div id="tabs" class="wow  animate__pulse">
+            <ul>
+                <li><a href="#tabs-1">Стрижки</a></li>
+                <li><a href="#tabs-2">Бритье</a></li>
+                <li><a href="#tabs-3">Комплексные услуги</a></li>
+                <li><a href="#tabs-4">Дополнительные услуги</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="tabs-1-block">
+                    <p>Стрижка мужская</p>
+                    <p>Стрижка удлиненная</p>
+                    <p>Стрижка машинкой</p>
+                    <p>Стрижка детская</p>
+                    <p class="and-p">Стрижка бороды</p>
+                </div>
+                <div class="tabs-1-block-2">
+                    <p>Подбор стрижки, 2 мытья, укладка </p>
+                    <p>Подбор стрижки, 2 мытья, укладка </p>
+                    <p id="circle">Без ножниц </p>
+                    <p class="one">От 4 до 14 лет включительно,
+                        не удлиненная </p>
+                    <p>С распариванием и окантовкой
+                        бритвой шаветт </p>
+                </div>
+                <div class="tabs-1-block-3">
+                    <p>1400 руб</p>
+                    <p>2100 руб</p>
+                    <p>950 руб</p>
+                    <p>1100 руб</p>
+                    <p>950 руб</p>
+                </div>
+            </div>
+            <div id="tabs-2">
+                <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
+                    nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
+                    molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
+                    in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis.
+                    Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat.
+                    Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
+                    felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+            </div>
+            <div id="tabs-3">
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                    vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
+                    Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+                    Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+
+            </div>
+            <div id="tabs-4">
+                <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                    vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
+                    Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+                    Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+
+            </div>
+            <div id="tabs-button">
+                <button class="btn-red form-barber">Записаться</button>
+            </div>
+        </div>
+        <div id="tabs-content-image" class="wow  animate__slideInRight">
+            <img src="images/dark_mask-barber.png">
+        </div>
+    </div>
+</div>
+
+<div id="slick-container">
+    <div class="description-content-title wow animate__slideInUp">Наши мастера</div>
+    <div id="slick-container-text" class="wow animate__slideInUp">
+        Вот они, простые герои, несущие в мир стиль и безупречный внешний вид.<br>
+        Команда Barber Club каждый день трудится над тем, чтобы создавать и поддерживать ваш индивидуальный стиль,
+        подчеркивать характер и превращать недостатки в достоинства.
+    </div>
+    <div class="my-slick wow animate__slideInUp">
+        <div class="barber-image">
+            <div class="barber-name">Барбер Алексей</div>
+            <img src="images/dark_master_1.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+        <div class="barber-image">
+            <div class="barber-name">Барбер Роман</div>
+            <img src="images/dark_master.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+        <div class="barber-image">
+            <div class="barber-name">Барбер Алексей</div>
+            <img src="images/dark_master_1.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+        <div class="barber-image">
+            <div class="barber-name">Барбер Роман</div>
+            <img src="images/dark_master.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+        <div class="barber-image">
+            <div class="barber-name">Барбер Алексей</div>
+            <img src="images/dark_master_1.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+        <div class="barber-image">
+            <div class="barber-name">Барбер Роман</div>
+            <img src="images/dark_master.png">
+            <button class="barber-button form-barber">
+                <div>Записаться</div>
+                <img src="images/right.png">
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div id="discount">
+    <div id="discount-content">
+        <div class="description-content-title wow animate__slideInLeft">Дарим вам скидку</div>
+        <div id="discount-text" class="wow animate__slideInLeft">
+            <span class="wow animate__slideInLeft">-15%</span>
+            <div class="wow animate__slideInLeft">Создайте деловой имидж, который достоин Вас!
+                Получите скидку на ваш первый визит.
+            </div>
+        </div>
+        <button class="btn-red wow animate__slideInLeft">Получить скидку</button>
+    </div>
+    <div id="discount-image" class="wow animate__slideInRight">
+        <img src="images/discount.png">
+    </div>
+</div>
+
+<div id="slick-two">
+    <div id="slick-content">
+        <div class="description-content-title wow animate__slideInLeft">Подписывайтесь на наш Instagram</div>
+        <div id="description-content-inst" >
+            <div id="instagram" class="wow animate__slideInDown" >
+                <img src="images/instagram.png">
+                <p>@Barber_club</p>
+            </div>
+            <a href="https://www.instagram.com/barber/" class="btn-red link wow animate__slideInRight">Перейти в профиль</a>
+        </div>
+    </div>
+    <div class="barber-slick wow animate__fadeInUp">
+        <div class="barber-slick-image">
+            <img src="images/image1.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image2.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image3.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image4.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image5.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image2.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image1.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image2.png">
+        </div>
+        <div class="barber-slick-image">
+            <img src="images/image3.png">
+        </div>
+    </div>
+</div>
+
+<div id="contacts">
+    <div class="description-content-title wow animate__slideInDown">Контакты</div>
+    <div id="maps-address">
+        <div id="contacts-content" class="wow animate__slideInLeft">
+            <div class="logo">
+                <img src="images/scissors.png">
+                <div>Barber club</div>
+            </div>
+            <div class="contacts-content-address">
+                <p>Адрес барбершопа:</p>
+                <div id="address">
+                    г. Киев, ул. Липинского,<br>
+                    Офисный центр «Леонардо»
+                </div>
+            </div>
+            <div class="contacts-content-address">
+                <p>Время работы:</p>
+                <div>
+                    Пн-Вс 10:00-21:00
+                </div>
+            </div>
+            <div id="contacts-icons">
+                <svg class="facebook" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h151v-181h-60v-90h60v-61c0-49.628906 40.371094-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm0 0"/>
+                </svg>
+                <svg class="instagram" viewBox="0 0 512.00096 512.00096" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m373.40625 0h-234.8125c-76.421875 0-138.59375 62.171875-138.59375 138.59375v234.816406c0 76.417969 62.171875 138.589844 138.59375 138.589844h234.816406c76.417969 0 138.589844-62.171875 138.589844-138.589844v-234.816406c0-76.421875-62.171875-138.59375-138.59375-138.59375zm-117.40625 395.996094c-77.195312 0-139.996094-62.800782-139.996094-139.996094s62.800782-139.996094 139.996094-139.996094 139.996094 62.800782 139.996094 139.996094-62.800782 139.996094-139.996094 139.996094zm143.34375-246.976563c-22.8125 0-41.367188-18.554687-41.367188-41.367187s18.554688-41.371094 41.367188-41.371094 41.371094 18.558594 41.371094 41.371094-18.558594 41.367187-41.371094 41.367187zm0 0"/>
+                    <path d="m256 146.019531c-60.640625 0-109.980469 49.335938-109.980469 109.980469 0 60.640625 49.339844 109.980469 109.980469 109.980469 60.644531 0 109.980469-49.339844 109.980469-109.980469 0-60.644531-49.335938-109.980469-109.980469-109.980469zm0 0"/>
+                    <path d="m399.34375 96.300781c-6.257812 0-11.351562 5.09375-11.351562 11.351563 0 6.257812 5.09375 11.351562 11.351562 11.351562 6.261719 0 11.355469-5.089844 11.355469-11.351562 0-6.261719-5.09375-11.351563-11.355469-11.351563zm0 0"/>
+                </svg>
+                <svg class="youtube" viewBox="0 -62 512.00099 512" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m220.949219 234.609375 84.539062-45.460937-84.539062-46.257813zm0 0"/>
+                    <path d="m508.234375 91.527344-.023437-.234375c-.433594-4.121094-4.75-40.78125-22.570313-59.421875-20.597656-21.929688-43.949219-24.59375-55.179687-25.871094-.929688-.109375-1.78125-.203125-2.542969-.304688l-.894531-.09375c-67.6875-4.921874-169.910157-5.5937495-170.933594-5.601562h-.179688c-1.023437.0078125-103.246094.679688-171.542968 5.601562l-.902344.09375c-.726563.097657-1.527344.1875-2.398438.289063-11.101562 1.28125-34.203125 3.949219-54.859375 26.667969-16.972656 18.449218-21.878906 54.320312-22.382812 58.351562l-.058594.523438c-.152344 1.714844-3.765625 42.539062-3.765625 83.523437v38.3125c0 40.984375 3.613281 81.808594 3.765625 83.523438l.027344.261719c.433593 4.050781 4.746093 40.035156 22.484375 58.6875 19.367187 21.199218 43.855468 24 57.027344 25.507812 2.082031.238281 3.878906.445312 5.097656.660156l1.183594.160156c39.082031 3.722657 161.617187 5.554688 166.8125 5.628907l.15625.003906.152343-.003906c1.027344-.003907 103.246094-.675781 170.933594-5.601563l.894531-.089844c.851563-.113281 1.8125-.214843 2.867188-.324218 11.042968-1.171875 34.015625-3.605469 54.390625-26.015625 16.972656-18.449219 21.878906-54.320313 22.382812-58.351563l.058594-.523437c.152344-1.714844 3.765625-42.539063 3.765625-83.523438v-38.3125c0-40.984375-3.613281-81.804687-3.765625-83.523437zm-173.558594 115.992187-113.113281 60.824219c-3.105469 1.671875-6.480469 2.503906-9.847656 2.503906-3.675782 0-7.34375-.992187-10.652344-2.964844-6.335938-3.789062-10.117188-10.457031-10.117188-17.835937v-122.71875c0-7.414063 3.804688-14.09375 10.179688-17.875 6.375-3.777344 14.066406-3.914063 20.570312-.355469l113.113282 61.894532c6.691406 3.660156 10.832031 10.675781 10.804687 18.304687-.027343 7.625-4.21875 14.609375-10.9375 18.222656zm0 0"/>
+                </svg>
+            </div>
+            <a class="contacts-href" href="https://www.instagram.com/barber/">info@barberclub.ru</a>
+            <div class="number">+7 912 816-93-96</div>
+            <button class="btn-border-red bt">
+                <img src="images/call.png">
+                <span>Заказать звонок</span>
+            </button>
+        </div>
+        <div id="contacts-maps" class="wow animate__slideInRight">
+            <iframe allowtransparency
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d755.3383029762059!2d30.506599800445983!3d50.447711177517135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce5803907051%3A0x331f1705f2dd309d!2z0J7RhNC40YHQvdGL0Lkg0YbQtdC90YLRgCDQm9C10L7QvdCw0YDQtNC-INC60LvQsNGB0YHQsCDQkissINCw0YDQtdC90LTQsCDQvtGE0LjRgdC-0LI!5e0!3m2!1sru!2sby!4v1622059733611!5m2!1sru!2sby"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="wow animate__bounceInRight">
+    © Все права защищены
+</div>
+
+<div id="reservation-container">
+    <div id="reservation">
+        <div id="barber-image">
+            <img src="images/barber-form.png">
+        </div>
+        <div id="razor">
+            <img src="images/razor.png">
+        </div>
+        <div id="reservation-content-close">
+            <img id="reservation-close" src="images/close.png">
+        </div>
+        <div id="reservation-content">
+            <div class="description-content-title">Оформить заявку</div>
+            <div id="reservation-content-text">Мы перезвоним вам в течении 5 минут</div>
+            <form id="reservation-form" action="mail.php" method="post">
+                <div class="reservation-input">
+                    <input class="form" type="text" name="name" id="name" placeholder="Александр"><br>
+                    <span id="for-name" class="error-text hide">Необходимо ввести имя!</span>
+                </div>
+                <div class="reservation-input">
+                    <input class="form" type="text" name="phone" id="phone" placeholder="+380 (__) ___ - __ - __"><br>
+                    <span id="for-phone" class="error-text hide">Необходимо ввести номер телефона!</span>
+                </div>
+                <div class="reservation-input">
+                    <input class="form" type="text" name="service" id="service" placeholder="Выбрать услугу"><br>
+                    <span id="for-service" class="error-text hide">Необходимо выбрать услугу!</span>
+                </div>
+                <div class="reservation-input">
+                    <input class="form" type="text" name="master" id="master" placeholder="Выберите мастера"><br>
+                    <span id="for-master" class="error-text hide">Необходимо выбрать мастера!</span>
+                </div>
+                <div class="reservation-input">
+                    <input class="form" type="text" name="date" id="date" placeholder="Введите дату"> <br>
+                    <span id="for-date" class="error-text hide">Необходимо ввести дату!</span>
+                </div>
+                <div class="reservation-input">
+                    <input class="form" type="text" name="time" id="time" placeholder="Введите время"><br>
+                    <span id="for-time" class="error-text hide">Необходимо ввести время!</span>
+                </div>
+            </form>
+            <button id="reservation-btn" class="btn-red">Отправить заявку</button>
+        </div>
+
+        <div id="reservation-sent">
+            <div class="description-sent-title">Спасибо за ваш заказ!</div>
+            <div id="reservation-sent-text">
+                Мы перезвоним вам для уточнения
+                данных в течении 5 минут.
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="discount-pop-ap">
+    <div id="discount-pop-ap-content">
+        <div id="blade-discount">
+            <img src="images/blade-2.png">
+        </div>
+        <div id="discount-pop-ap-close">
+            <img id="pop-ap-close" src="images/close.png">
+        </div>
+        <div id="discount-pop-ap-text">
+            Просто запишитесь в наш барбершоп и приходите –<span> скидку мы применим после осуществления услуги!</span>
+        </div>
+    </div>
+</div>
+
+<div id="loader">
+    <div class="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+<script src="js/wow.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="plagins/slick/slick.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
