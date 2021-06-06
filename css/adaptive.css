@@ -753,6 +753,11 @@
     #reservation-sent .description-sent-title {
         margin-top: 120px;
     }
-
+    .error-text{
+        display: none;
+    }
+    .call-input span, .error-text{
+        display: none;
+    }
 
 }
